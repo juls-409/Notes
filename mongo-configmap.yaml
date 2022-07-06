@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongodb-configmap
+data:
+  # FROM OUR SERVICE. CAN REFER TO IT AS SO BECAUE OF HOW MONGODB WORKS
+  # GOES OFF OF WHATEVER WE NAMED OUR SERVICE
+  database_url: mongodb-service
